@@ -1,4 +1,4 @@
-package com.mcomobile.mercadillos;
+package com.mcomobile.mercadillos.db;
 
 import java.util.ArrayList;
 import java.util.List;
