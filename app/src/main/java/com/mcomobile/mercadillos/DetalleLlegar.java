@@ -14,6 +14,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+
 public class DetalleLlegar extends Activity implements LocationListener {
 
 private WebView webView;

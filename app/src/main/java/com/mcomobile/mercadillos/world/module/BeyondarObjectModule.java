@@ -15,10 +15,11 @@
  */
 package com.mcomobile.mercadillos.world.module;
 
-import com.beyondar.android.opengl.renderable.Renderable;
-import com.beyondar.android.opengl.texture.Texture;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.world.BeyondarObject;
+
+import com.mcomobile.mercadillos.opengl.renderable.Renderable;
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.world.BeyondarObject;
 
 public interface BeyondarObjectModule extends BeyondarModule {
 	

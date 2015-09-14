@@ -17,11 +17,10 @@ package com.mcomobile.mercadillos.screenshot;
 
 import android.graphics.Bitmap;
 
-import com.beyondar.android.opengl.renderer.ARRenderer.SnapshotCallback;
-import com.beyondar.android.util.ImageUtils;
-import com.beyondar.android.view.BeyondarGLSurfaceView;
-import com.beyondar.android.view.CameraView;
-import com.beyondar.android.view.CameraView.BeyondarPictureCallback;
+import com.mcomobile.mercadillos.opengl.renderer.ARRenderer;
+import com.mcomobile.mercadillos.util.ImageUtils;
+import com.mcomobile.mercadillos.view.BeyondarGLSurfaceView;
+import com.mcomobile.mercadillos.view.CameraView;
 
 public class ScreenshotHelper {
 
@@ -46,7 +45,7 @@ public class ScreenshotHelper {
 		bgls.tackePicture(callbackProcessing);
 	}
 
-	private static class ScreenShootCallback implements BeyondarPictureCallback, SnapshotCallback {
+	private static class ScreenShootCallback implements CameraView.BeyondarPictureCallback, ARRenderer.SnapshotCallback {
 
 		Bitmap btmCamera;
 		Bitmap btmGl;

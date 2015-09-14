@@ -15,19 +15,18 @@
  */
 package com.mcomobile.mercadillos.world;
 
+import com.mcomobile.mercadillos.opengl.colision.MeshCollider;
+import com.mcomobile.mercadillos.opengl.colision.SquareMeshCollider;
+import com.mcomobile.mercadillos.opengl.renderable.Renderable;
+import com.mcomobile.mercadillos.opengl.renderable.SquareRenderable;
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+import com.mcomobile.mercadillos.util.cache.BitmapCache;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.world.module.BeyondarObjectModule;
+import com.mcomobile.mercadillos.world.module.Modulable;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.beyondar.android.opengl.colision.MeshCollider;
-import com.beyondar.android.opengl.colision.SquareMeshCollider;
-import com.beyondar.android.opengl.renderable.Renderable;
-import com.beyondar.android.opengl.renderable.SquareRenderable;
-import com.beyondar.android.opengl.renderer.ARRenderer;
-import com.beyondar.android.opengl.texture.Texture;
-import com.beyondar.android.util.cache.BitmapCache;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.world.module.BeyondarObjectModule;
-import com.beyondar.android.world.module.Modulable;
 
 public class BeyondarObject implements Modulable<BeyondarObjectModule> {
 
@@ -385,7 +384,7 @@ public class BeyondarObject implements Modulable<BeyondarObjectModule> {
 	/**
 	 * Set how far is the object from the user.
 	 * 
-	 * This method is used by the {@link ARRenderer} to set this value.
+	 * This method is used by the {@link //ARRenderer} to set this value.
 	 * 
 	 * @param distance
 	 */

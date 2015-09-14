@@ -15,7 +15,8 @@
  */
 package com.mcomobile.mercadillos.util.math;
 
-import com.beyondar.android.util.math.geom.Point3;
+
+import com.mcomobile.mercadillos.util.math.geom.Point3;
 
 public class MathUtils {
 

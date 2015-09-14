@@ -1,8 +1,8 @@
 package com.mcomobile.mercadillos.opengl.renderer;
 
-import java.util.List;
+import com.mcomobile.mercadillos.world.BeyondarObject;
 
-import com.beyondar.android.world.BeyondarObject;
+import java.util.List;
 
 public interface OnBeyondarObjectRenderedListener {
 

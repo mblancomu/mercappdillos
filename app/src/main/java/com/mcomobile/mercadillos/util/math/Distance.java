@@ -15,9 +15,11 @@
  */
 package com.mcomobile.mercadillos.util.math;
 
-import com.beyondar.android.world.GeoObject;
 
 //http://www.movable-type.co.uk/scripts/latlong.html
+
+import com.mcomobile.mercadillos.world.GeoObject;
+
 /**
  * Class to calculate the distance between two points in arbitrary units
  * 

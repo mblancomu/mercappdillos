@@ -34,8 +34,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
 
-import com.beyondar.android.util.DebugBitmap;
-import com.beyondar.android.util.Logger;
+import com.mcomobile.mercadillos.util.DebugBitmap;
+import com.mcomobile.mercadillos.util.Logger;
 
 public class BitmapCache {
 

@@ -15,8 +15,8 @@
  */
 package com.mcomobile.mercadillos.opengl.colision;
 
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.util.math.geom.Ray;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.util.math.geom.Ray;
 
 /**
  * An armature is a container for 3D objects. It will be used for collision

@@ -16,6 +16,8 @@
 
 package com.mcomobile.mercadillos.opengl.util;
 
+import com.mcomobile.mercadillos.util.Logger;
+
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -29,7 +31,6 @@ import javax.microedition.khronos.opengles.GL10Ext;
 import javax.microedition.khronos.opengles.GL11;
 import javax.microedition.khronos.opengles.GL11Ext;
 
-import com.beyondar.android.util.Logger;
 
 /**
  * Allows retrieving the current matrix even if the current OpenGL ES driver

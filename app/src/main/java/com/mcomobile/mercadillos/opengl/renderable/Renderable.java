@@ -15,13 +15,12 @@
  */
 package com.mcomobile.mercadillos.opengl.renderable;
 
-import javax.microedition.khronos.opengles.GL10;
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+import com.mcomobile.mercadillos.util.math.geom.Plane;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.world.BeyondarObject;
 
-import com.beyondar.android.opengl.renderer.ARRenderer;
-import com.beyondar.android.opengl.texture.Texture;
-import com.beyondar.android.util.math.geom.Plane;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.world.BeyondarObject;
+import javax.microedition.khronos.opengles.GL10;
 
 public interface Renderable {
 
@@ -36,7 +35,7 @@ public interface Renderable {
 	 * @param distance
 	 *            The distance form the camera in meters.
 	 * @return True to force to paint the object, false otherwise. If false, the
-	 *         {@link ARRenderer} will draw it if it close enough to the camera
+	 *         {@link //RRenderer} will draw it if it close enough to the camera
 	 */
 	public boolean update(long time, double distance,
 						  BeyondarObject beyondarObject);

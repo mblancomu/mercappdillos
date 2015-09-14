@@ -26,7 +26,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
 import android.graphics.Rect;
 
-import com.beyondar.android.util.cache.BitmapCache;
+import com.mcomobile.mercadillos.util.cache.BitmapCache;
 
 public class DebugBitmap {
 

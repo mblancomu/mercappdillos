@@ -15,17 +15,6 @@ b * Copyright (C) 2013 BeyondAR
  */
 package com.mcomobile.mercadillos.opengl.renderer;
 
-import java.nio.IntBuffer;
-import java.util.ArrayList;
-import java.util.ConcurrentModificationException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Queue;
-import java.util.concurrent.ConcurrentLinkedQueue;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
-
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -42,22 +31,33 @@ import android.opengl.GLU;
 import android.opengl.GLUtils;
 import android.view.Surface;
 
-import com.beyondar.android.opengl.renderable.Renderable;
-import com.beyondar.android.opengl.texture.Texture;
-import com.beyondar.android.opengl.util.LowPassFilter;
-import com.beyondar.android.opengl.util.MatrixGrabber;
-import com.beyondar.android.util.Logger;
-import com.beyondar.android.util.PendingBitmapsToBeLoaded;
-import com.beyondar.android.util.Utils;
-import com.beyondar.android.util.cache.BitmapCache;
-import com.beyondar.android.util.math.Distance;
-import com.beyondar.android.util.math.MathUtils;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.util.math.geom.Ray;
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.BeyondarObjectList;
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.opengl.renderable.Renderable;
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+import com.mcomobile.mercadillos.opengl.util.LowPassFilter;
+import com.mcomobile.mercadillos.opengl.util.MatrixGrabber;
+import com.mcomobile.mercadillos.util.Logger;
+import com.mcomobile.mercadillos.util.PendingBitmapsToBeLoaded;
+import com.mcomobile.mercadillos.util.Utils;
+import com.mcomobile.mercadillos.util.cache.BitmapCache;
+import com.mcomobile.mercadillos.util.math.Distance;
+import com.mcomobile.mercadillos.util.math.MathUtils;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.util.math.geom.Ray;
+import com.mcomobile.mercadillos.world.BeyondarObject;
+import com.mcomobile.mercadillos.world.BeyondarObjectList;
+import com.mcomobile.mercadillos.world.GeoObject;
+import com.mcomobile.mercadillos.world.World;
+
+import java.nio.IntBuffer;
+import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
 
 // Some references:
 // http://ovcharov.me/2011/01/14/android-opengl-es-ray-picking/

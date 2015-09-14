@@ -30,18 +30,16 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
-import com.beyondar.android.opengl.renderer.ARRenderer;
-import com.beyondar.android.opengl.renderer.ARRenderer.FpsUpdatable;
-import com.beyondar.android.opengl.renderer.ARRenderer.SnapshotCallback;
-import com.beyondar.android.opengl.renderer.OnBeyondarObjectRenderedListener;
-import com.beyondar.android.opengl.util.BeyondarSensorManager;
-import com.beyondar.android.opengl.util.MatrixTrackingGL;
-import com.beyondar.android.util.CompatibilityUtil;
-import com.beyondar.android.util.Logger;
-import com.beyondar.android.util.math.geom.Ray;
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.opengl.renderer.ARRenderer;
+import com.mcomobile.mercadillos.opengl.renderer.OnBeyondarObjectRenderedListener;
+import com.mcomobile.mercadillos.opengl.util.BeyondarSensorManager;
+import com.mcomobile.mercadillos.opengl.util.MatrixTrackingGL;
+import com.mcomobile.mercadillos.util.CompatibilityUtil;
+import com.mcomobile.mercadillos.util.Logger;
+import com.mcomobile.mercadillos.util.math.geom.Ray;
+import com.mcomobile.mercadillos.world.BeyondarObject;
+import com.mcomobile.mercadillos.world.World;
+
 
 public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarObjectRenderedListener {
 
@@ -59,7 +57,7 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 
 	private int mSensorDelay;
 
-	public void tackePicture(SnapshotCallback callBack) {
+	public void tackePicture(ARRenderer.SnapshotCallback callBack) {
 		mRenderer.tackePicture(callBack);
 	}
 
@@ -127,7 +125,7 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 				&& !CompatibilityUtil.is7InchTablet(getContext()));
 	}
 
-	public void setFpsUpdatable(FpsUpdatable fpsUpdatable) {
+	public void setFpsUpdatable(ARRenderer.FpsUpdatable fpsUpdatable) {
 		mRenderer.setFpsUpdatable(fpsUpdatable);
 	}
 
@@ -272,7 +270,7 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 	}
 
 	/**
-	 * When a {@link GeoObject} is rendered according to its position it could
+	 * When a {@link //GeoObject} is rendered according to its position it could
 	 * look very small if it is far away. Use this method to render far objects
 	 * as if there were closer.<br>
 	 * For instance if there is an object at 100 meters and we want to have
@@ -282,14 +280,14 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 	 * 
 	 * @param maxDistanceSize
 	 *            The top far distance (in meters) which we want to draw a
-	 *            {@link GeoObject} , 0 to set again the default behavior
+	 *            {@link // GeoObject} , 0 to set again the default behavior
 	 */
 	public void setMaxDistanceSize(float maxDistanceSize) {
 		mRenderer.setMaxDistanceSize(maxDistanceSize);
 	}
 
 	/**
-	 * Get the max distance which a {@link GeoObject} will be rendered.
+	 * Get the max distance which a {@link //GeoObject} will be rendered.
 	 * 
 	 * @return The current max distance. 0 is the default behavior
 	 */
@@ -298,7 +296,7 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 	}
 
 	/**
-	 * When a {@link GeoObject} is rendered according to its position it could
+	 * When a {@link //GeoObject} is rendered according to its position it could
 	 * look very big if it is too close. Use this method to render near objects
 	 * as if there were farther.<br>
 	 * For instance if there is an object at 1 meters and we want to have
@@ -308,14 +306,14 @@ public class BeyondarGLSurfaceView extends GLSurfaceView implements OnBeyondarOb
 	 * 
 	 * @param minDistanceSize
 	 *            The top near distance (in meters) which we want to draw a
-	 *            {@link GeoObject} , 0 to set again the default behavior
+	 *            {@link //GeoObject} , 0 to set again the default behavior
 	 */
 	public void setMinDistanceSize(float minDistanceSize) {
 		mRenderer.setMinDistanceSize(minDistanceSize);
 	}
 
 	/**
-	 * Get the minimum distance which a {@link GeoObject} will be rendered.
+	 * Get the minimum distance which a {@link //eoObject} will be rendered.
 	 * 
 	 * @return The current minimum distance. 0 is the default behavior
 	 */

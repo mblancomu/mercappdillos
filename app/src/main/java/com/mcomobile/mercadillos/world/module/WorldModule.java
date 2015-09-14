@@ -32,9 +32,9 @@ package com.mcomobile.mercadillos.world.module;
  */
 import android.content.Context;
 
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.BeyondarObjectList;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.world.BeyondarObject;
+import com.mcomobile.mercadillos.world.BeyondarObjectList;
+import com.mcomobile.mercadillos.world.World;
 
 public interface WorldModule extends BeyondarModule {
 

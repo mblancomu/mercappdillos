@@ -22,8 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
-    compile "com.android.support:support-v4:21.0.+"
-    compile project(':BeyondAR_Framework')
-    compile project(':GenRadar-master')
+    compile "com.android.support:support-v4:22.2.+"
     compile 'com.google.android.gms:play-services:7.8.0'
 }

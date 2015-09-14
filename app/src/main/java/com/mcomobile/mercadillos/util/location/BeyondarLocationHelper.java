@@ -20,8 +20,8 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.world.GeoObject;
+import com.mcomobile.mercadillos.world.World;
 
 /**
  * This class provides a helper to get the best location. To do that the

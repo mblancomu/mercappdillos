@@ -40,19 +40,19 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.beyondar.android.fragment.BeyondarFragmentSupport;
-import com.beyondar.android.screenshot.OnScreenshotListener;
-import com.beyondar.android.view.BeyondarGLSurfaceView;
-import com.beyondar.android.view.OnClickBeyondarObjectListener;
-import com.beyondar.android.view.OnTouchBeyondarViewListener;
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
-import com.yasiralijaved.genradar.main.GenRadarManager;
-import com.yasiralijaved.genradar.main.GenRadarPoint;
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+import com.mcomobile.mercadillos.fragment.BeyondarFragmentSupport;
+import com.mcomobile.mercadillos.radar.GenRadarPoint;
+import com.mcomobile.mercadillos.screenshot.OnScreenshotListener;
+import com.mcomobile.mercadillos.view.BeyondarGLSurfaceView;
+import com.mcomobile.mercadillos.view.OnClickBeyondarObjectListener;
+import com.mcomobile.mercadillos.view.OnTouchBeyondarViewListener;
+import com.mcomobile.mercadillos.world.BeyondarObject;
+import com.mcomobile.mercadillos.world.GeoObject;
+import com.mcomobile.mercadillos.world.World;
 
 public class RealidadAumentada extends FragmentActivity implements OnTouchBeyondarViewListener,
-OnClickBeyondarObjectListener,LocationListener,OnScreenshotListener, OnSeekBarChangeListener{
+		OnClickBeyondarObjectListener,LocationListener,OnScreenshotListener, OnSeekBarChangeListener{
 	BeyondarFragmentSupport mBeyondarFragment;
 	World sharedWorld;
 	String marcador = "";
@@ -761,6 +761,6 @@ public void onScreenshot(Bitmap screenshot) {
 	
 }
 }
-	
+
 
 

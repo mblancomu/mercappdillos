@@ -32,8 +32,9 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.WindowManager;
 
-import com.beyondar.android.util.DebugBitmap;
-import com.beyondar.android.util.Logger;
+import com.mcomobile.mercadillos.util.DebugBitmap;
+import com.mcomobile.mercadillos.util.Logger;
+
 
 public class CameraView extends SurfaceView implements SurfaceHolder.Callback, Camera.PictureCallback {
 	public static interface BeyondarPictureCallback {

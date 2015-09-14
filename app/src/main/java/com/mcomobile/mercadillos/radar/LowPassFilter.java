@@ -21,11 +21,7 @@ public class LowPassFilter {
      */
     static final float ALPHA = 0.15f;
     
-	/**
-	 * Some times this method required for 2D Maps (2D Plan)
-     * @see http://en.wikipedia.org/wiki/Low-pass_filter#Algorithmic_implementation
-     * @see http://developer.android.com/reference/android/hardware/Sensor.html#TYPE_ACCELEROMETER
-     */
+
     public static float[] filter2D( float[] input, float[] output ) {
             if ( output == null ) return input;
 

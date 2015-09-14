@@ -128,6 +128,8 @@ public class DetalleLeer extends ListActivity {
 			// getting JSON string from URL
 			JSONObject json = jParser.makeHttpRequest(url_all_comentarios, "GET", params);
 
+			Log.e("","Recibo esto: " + json.toString());
+
 			if (json ==  null){
 
 				Toast.makeText(DetalleLeer.this,"Sin comentarios¡¡",Toast.LENGTH_SHORT).show();

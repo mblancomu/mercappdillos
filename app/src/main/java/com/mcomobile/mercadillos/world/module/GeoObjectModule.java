@@ -15,8 +15,8 @@
  */
 package com.mcomobile.mercadillos.world.module;
 
-import com.beyondar.android.world.GeoObject;
 
+import com.mcomobile.mercadillos.world.GeoObject;
 
 public interface GeoObjectModule extends BeyondarObjectModule {
 

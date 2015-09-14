@@ -11,6 +11,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+
 public class DetalleMercado extends Activity {
 
 	// Progress Dialog

@@ -53,6 +53,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
 
 public class Mapa extends android.support.v4.app.FragmentActivity implements OnSeekBarChangeListener,OnInfoWindowClickListener,RadioGroup.OnCheckedChangeListener,OnMapClickListener, OnMarkerDragListener,OnMarkerClickListener,LocationListener {                                                                                                                                                                                                                                                                                                     
 
@@ -790,10 +791,10 @@ public void alerta(View view) {
      mapa.setOnMapClickListener(this);
 }
 public void radar(View view) {
-	String mapgen = "Mapa";
+/*	String mapgen = "Mapa";
 	Intent i = new Intent(this,RealidadAumentada.class );
 	i.putExtra("Mapa", mapgen);
-    startActivity(i);
+    startActivity(i);*/
     finish();
 }
 public void compartir(View view) {
@@ -811,7 +812,7 @@ public void home(View view) {
 	    intent.putExtra("Mercado", mercado);
 	    startActivity(intent);
 	}  else if(realidad!=null){
-		Intent intent = new Intent(Mapa.this, RealidadAumentada.class);  
+		Intent intent = new Intent(Mapa.this, RealidadAumentada.class);
 	    intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);	
 	    startActivity(intent);
 	} else {

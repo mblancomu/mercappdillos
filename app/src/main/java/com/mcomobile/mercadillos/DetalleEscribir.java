@@ -23,6 +23,8 @@ import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.Toast;
 
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+
 public class DetalleEscribir extends Activity {
 
 	// Progress Dialog

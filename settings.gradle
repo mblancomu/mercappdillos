@@ -1,1 +1,1 @@
-include ':app', ':BeyondAR_Framework', ':GenRadar-master'
+include ':app'

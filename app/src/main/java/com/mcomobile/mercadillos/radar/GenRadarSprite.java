@@ -13,20 +13,18 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.View;
 
-import com.yasiralijaved.genradar.main.*;
-
 public class GenRadarSprite extends View {
 	private Paint mPaint;
-    private List<com.yasiralijaved.genradar.main.GenRadarPoint> mRadarPoints;
+    private List<GenRadarPoint> mRadarPoints;
     
     // Lint requires a Default Construct for Views, So, make it private because its useless
     private GenRadarSprite(Context context){
     	super(context);
     }
     
-    public GenRadarSprite(Context context, List<com.yasiralijaved.genradar.main.GenRadarPoint> genRadarPoints) {
+    public GenRadarSprite(Context context, List<GenRadarPoint> genRadarPoints) {
         super(context);
-        this.mRadarPoints = new ArrayList<com.yasiralijaved.genradar.main.GenRadarPoint>(genRadarPoints);
+        this.mRadarPoints = new ArrayList<GenRadarPoint>(genRadarPoints);
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
     }
@@ -40,8 +38,8 @@ public class GenRadarSprite extends View {
         }        
     }
     
-    public void updateUIWithNewRadarPoints(List<com.yasiralijaved.genradar.main.GenRadarPoint> genRadarPoints){
-    	this.mRadarPoints = new ArrayList<com.yasiralijaved.genradar.main.GenRadarPoint>(genRadarPoints);
+    public void updateUIWithNewRadarPoints(List<GenRadarPoint> genRadarPoints){
+    	this.mRadarPoints = new ArrayList<GenRadarPoint>(genRadarPoints);
     	this.invalidate();
     }
 }

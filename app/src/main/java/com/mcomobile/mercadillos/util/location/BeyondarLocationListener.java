@@ -23,8 +23,8 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.world.GeoObject;
+import com.mcomobile.mercadillos.world.World;
 
 public class BeyondarLocationListener implements LocationListener {
 

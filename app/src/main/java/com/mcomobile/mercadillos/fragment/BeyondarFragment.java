@@ -21,22 +21,22 @@ import android.widget.FrameLayout.LayoutParams;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.beyondar.android.opengl.renderer.ARRenderer.FpsUpdatable;
-import com.beyondar.android.opengl.util.LowPassFilter;
-import com.beyondar.android.screenshot.OnScreenshotListener;
-import com.beyondar.android.screenshot.ScreenshotHelper;
-import com.beyondar.android.util.math.geom.Ray;
-import com.beyondar.android.view.BeyondarGLSurfaceView;
-import com.beyondar.android.view.BeyondarViewAdapter;
-import com.beyondar.android.view.CameraView;
-import com.beyondar.android.view.OnClickBeyondarObjectListener;
-import com.beyondar.android.view.OnTouchBeyondarViewListener;
-import com.beyondar.android.world.BeyondarObject;
-import com.beyondar.android.world.GeoObject;
-import com.beyondar.android.world.World;
+import com.mcomobile.mercadillos.opengl.renderer.ARRenderer;
+import com.mcomobile.mercadillos.opengl.util.LowPassFilter;
+import com.mcomobile.mercadillos.screenshot.OnScreenshotListener;
+import com.mcomobile.mercadillos.screenshot.ScreenshotHelper;
+import com.mcomobile.mercadillos.util.math.geom.Ray;
+import com.mcomobile.mercadillos.view.BeyondarGLSurfaceView;
+import com.mcomobile.mercadillos.view.BeyondarViewAdapter;
+import com.mcomobile.mercadillos.view.CameraView;
+import com.mcomobile.mercadillos.view.OnClickBeyondarObjectListener;
+import com.mcomobile.mercadillos.view.OnTouchBeyondarViewListener;
+import com.mcomobile.mercadillos.world.BeyondarObject;
+import com.mcomobile.mercadillos.world.World;
+
 
 @SuppressLint("NewApi")
-public class BeyondarFragment extends Fragment implements FpsUpdatable,
+public class BeyondarFragment extends Fragment implements ARRenderer.FpsUpdatable,
 		OnClickListener, OnTouchListener {
 
 	private static final int CORE_POOL_SIZE = 1;
@@ -281,7 +281,7 @@ public class BeyondarFragment extends Fragment implements FpsUpdatable,
 		return mBeyondarGLSurface.getSensorDelay();
 	}
 
-	public void setFpsUpdatable(FpsUpdatable fpsUpdatable) {
+	public void setFpsUpdatable(ARRenderer.FpsUpdatable fpsUpdatable) {
 		mBeyondarGLSurface.setFpsUpdatable(fpsUpdatable);
 	}
 
@@ -353,7 +353,7 @@ public class BeyondarFragment extends Fragment implements FpsUpdatable,
 	}
 
 	/**
-	 * When a {@link GeoObject} is rendered according to its position it could
+	 * When a {@link //GeoObject} is rendered according to its position it could
 	 * look very small if it is far away. Use this method to render far objects
 	 * as if there were closer.<br>
 	 * For instance if there is an object at 100 meters and we want to have
@@ -363,14 +363,14 @@ public class BeyondarFragment extends Fragment implements FpsUpdatable,
 	 * 
 	 * @param maxDistanceSize
 	 *            The top far distance (in meters) which we want to draw a
-	 *            {@link GeoObject} , 0 to set again the default behavior
+	 *            {@link //GeoObject} , 0 to set again the default behavior
 	 */
 	public void setMaxFarDistance(float maxDistanceSize) {
 		mBeyondarGLSurface.setMaxDistanceSize(maxDistanceSize);
 	}
 
 	/**
-	 * Get the max distance which a {@link GeoObject} will be rendered.
+	 * Get the max distance which a {@link //GeoObject} will be rendered.
 	 * 
 	 * @return The current max distance. 0 is the default behavior
 	 */
@@ -379,7 +379,7 @@ public class BeyondarFragment extends Fragment implements FpsUpdatable,
 	}
 
 	/**
-	 * When a {@link GeoObject} is rendered according to its position it could
+	 * When a {@link //GeoObject} is rendered according to its position it could
 	 * look very big if it is too close. Use this method to render near objects
 	 * as if there were farther.<br>
 	 * For instance if there is an object at 1 meters and we want to have
@@ -389,14 +389,14 @@ public class BeyondarFragment extends Fragment implements FpsUpdatable,
 	 * 
 	 * @param minDistanceSize
 	 *            The top near distance (in meters) which we want to draw a
-	 *            {@link GeoObject} , 0 to set again the default behavior
+	 *            {@link } , 0 to set again the default behavior
 	 */
 	public void setMinFarDistanceSize(float minDistanceSize) {
 		mBeyondarGLSurface.setMinDistanceSize(minDistanceSize);
 	}
 
 	/**
-	 * Get the minimum distance which a {@link GeoObject} will be rendered.
+	 * Get the minimum distance which a {@link } will be rendered.
 	 * 
 	 * @return The current minimum distance. 0 is the default behavior
 	 */

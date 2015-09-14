@@ -1,8 +1,9 @@
 package com.mcomobile.mercadillos.view;
 
+import com.mcomobile.mercadillos.world.BeyondarObject;
+
 import java.util.ArrayList;
 
-import com.beyondar.android.world.BeyondarObject;
 
 public interface OnClickBeyondarObjectListener {
 

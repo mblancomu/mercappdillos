@@ -15,11 +15,11 @@
  */
 package com.mcomobile.mercadillos.opengl.colision;
 
-import com.beyondar.android.util.math.geom.Plane;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.util.math.geom.Ray;
-import com.beyondar.android.util.math.geom.Triangle;
 
+import com.mcomobile.mercadillos.util.math.geom.Plane;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.util.math.geom.Ray;
+import com.mcomobile.mercadillos.util.math.geom.Triangle;
 
 public class SquareMeshCollider implements MeshCollider {
 

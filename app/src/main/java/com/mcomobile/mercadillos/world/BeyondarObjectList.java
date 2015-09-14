@@ -15,10 +15,11 @@
  */
 package com.mcomobile.mercadillos.world;
 
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.beyondar.android.opengl.texture.Texture;
 
 /**
  * This class allow the user to store according to type, so it is useful when a

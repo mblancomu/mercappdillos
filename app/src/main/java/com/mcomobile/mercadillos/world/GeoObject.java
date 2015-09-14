@@ -17,9 +17,9 @@ package com.mcomobile.mercadillos.world;
 
 import android.location.Location;
 
-import com.beyondar.android.util.math.Distance;
-import com.beyondar.android.world.module.BeyondarObjectModule;
-import com.beyondar.android.world.module.GeoObjectModule;
+import com.mcomobile.mercadillos.util.math.Distance;
+import com.mcomobile.mercadillos.world.module.BeyondarObjectModule;
+import com.mcomobile.mercadillos.world.module.GeoObjectModule;
 
 public class GeoObject extends BeyondarObject {
 

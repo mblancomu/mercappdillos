@@ -15,13 +15,13 @@
  */
 package com.mcomobile.mercadillos.opengl.renderable;
 
-import javax.microedition.khronos.opengles.GL10;
+import com.mcomobile.mercadillos.opengl.texture.Texture;
+import com.mcomobile.mercadillos.util.math.geom.Plane;
+import com.mcomobile.mercadillos.util.math.geom.Point3;
+import com.mcomobile.mercadillos.util.math.geom.Vector3;
+import com.mcomobile.mercadillos.world.BeyondarObject;
 
-import com.beyondar.android.opengl.texture.Texture;
-import com.beyondar.android.util.math.geom.Plane;
-import com.beyondar.android.util.math.geom.Point3;
-import com.beyondar.android.util.math.geom.Vector3;
-import com.beyondar.android.world.BeyondarObject;
+import javax.microedition.khronos.opengles.GL10;
 
 public class SquareRenderable implements Renderable {
 

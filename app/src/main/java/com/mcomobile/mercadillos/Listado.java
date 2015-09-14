@@ -25,6 +25,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+
 public class Listado extends ListActivity{
 	
 	TextView titulo;

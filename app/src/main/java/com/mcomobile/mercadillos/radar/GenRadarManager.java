@@ -25,15 +25,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.yasiralijaved.genradar.main.GenRadarPoint;
-import com.yasiralijaved.genradar.main.GenRadarSprite;
-import com.yasiralijaved.genradar.utils.LowPassFilter;
-
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.animation.Animation;
@@ -42,6 +40,7 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 
+@TargetApi(Build.VERSION_CODES.CUPCAKE)
 public class GenRadarManager implements SensorEventListener {
 
 	private static final String TAG = "GenRadarManager";
@@ -251,7 +250,7 @@ public class GenRadarManager implements SensorEventListener {
 		for(int i = 0; i < mRadarPoints.size(); i++){
 			Log.d("circle", mRadarPoints.get(i).toString());
 			if(mRadarPoints.get(i).getX() > MAP_WIDTH || mRadarPoints.get(i).getY() > MAP_HEIGHT){
-				Log.d("oops! this circle not in radar range", "removing this circle...");				
+				Log.d("oop", "removing this circle...");
 			}else{
 				finalPointsToDraw.add(mRadarPoints.get(i));
 			}

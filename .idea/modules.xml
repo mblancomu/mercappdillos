@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BeyondAR_Framework/BeyondAR_Framework.iml" filepath="$PROJECT_DIR$/BeyondAR_Framework/BeyondAR_Framework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GenRadar-master/GenRadar-master.iml" filepath="$PROJECT_DIR$/GenRadar-master/GenRadar-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mercadillos.iml" filepath="$PROJECT_DIR$/Mercadillos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

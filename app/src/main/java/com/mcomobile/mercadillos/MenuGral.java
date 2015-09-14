@@ -32,6 +32,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mcomobile.mercadillos.db.AdminSQLiteOpenHelper;
+
 public class MenuGral extends Activity{
 
 	Button btnmapa,btnlist,btnradar,btninfo;
@@ -376,8 +378,8 @@ public void listado (View view){
 	startActivity(intent);
 }
 public void realidad (View view){
-	Intent intent = new Intent(this,RealidadAumentada.class);
-	startActivity(intent);
+	/*Intent intent = new Intent(this,RealidadAumentada.class);
+	startActivity(intent);*/
 }
 public void infogral (View view){
 	alertaInfo();

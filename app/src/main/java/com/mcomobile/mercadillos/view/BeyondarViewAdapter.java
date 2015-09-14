@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 
-import com.beyondar.android.util.math.geom.Point2;
-import com.beyondar.android.world.BeyondarObject;
+import com.mcomobile.mercadillos.util.math.geom.Point2;
+import com.mcomobile.mercadillos.world.BeyondarObject;
 
 public abstract class BeyondarViewAdapter {
 
