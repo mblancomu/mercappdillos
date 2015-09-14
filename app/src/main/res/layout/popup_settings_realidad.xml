@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_realidad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+ <CheckBox
+     android:id="@+id/ckRadVision"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:background="@drawable/boton_barramenu"
+     android:gravity="center"
+     android:paddingRight="40dp"
+     android:text="@string/ckSettingsRA1"
+     android:textColor="#fff" />
+
+    </LinearLayout>

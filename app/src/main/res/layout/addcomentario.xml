@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:orientation="vertical" >
+    
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Mercado:"
+        android:textColor="#fff"
+        android:textSize="17dip" />
+    
+    <!-- Input Name -->
+
+	<EditText
+	    android:id="@+id/inputName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:background="#696969"
+	    android:singleLine="true"
+	    android:textColor="#fff" />
+	
+	<!-- Price Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Valoración:"
+        android:textColor="#fff"
+        android:textSize="17dip" />
+    
+    <!-- Input Price -->
+
+	<RatingBar
+	    android:id="@+id/ratingMercado"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:numStars="5"
+	    android:rating="0"
+	    android:stepSize="1.0" />
+	
+	<!-- Description Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Comentario:"
+        android:textColor="#fff"
+        android:textSize="17dip" />
+    
+    <!-- Input description -->
+
+	<EditText
+	    android:id="@+id/inputDesc"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:background="#696969"
+	    android:gravity="top"
+	    android:lines="4"
+	    android:textColor="#fff" />
+	
+	<!-- Button Create Product -->
+
+	<Button
+	    android:id="@+id/btnCreateProduct"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:background="@drawable/boton_barramenu"
+	    android:padding="5dp"
+	    android:text="Publicar Comentario"
+	    android:textColor="#fff" />
+	
+</LinearLayout>

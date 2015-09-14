@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:orientation="vertical"
+    tools:context=".Inicio" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnmapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_menu_mapa"
+                    android:drawableTop="@drawable/mapa"
+                    android:gravity="center"
+                    android:onClick="mapa"
+                    android:paddingBottom="70dp"
+                    android:paddingTop="70dp"
+                    android:text="@string/btn_mapa"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btninfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/boton_menu_info"
+                    android:drawableTop="@drawable/info"
+                    android:onClick="infogral"
+                    android:paddingTop="20dp"
+                    android:text="@string/btn_info"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/boton_menu_listado"
+                    android:drawableTop="@drawable/listado"
+                    android:onClick="listado"
+                    android:paddingTop="20dp"
+                    android:text="@string/btn_listado"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnradar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_menu_radar"
+                    android:drawableTop="@drawable/radar"
+                    android:onClick="realidad"
+                    android:paddingBottom="70dp"
+                    android:paddingTop="70dp"
+                    android:text="@string/btn_realidad"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

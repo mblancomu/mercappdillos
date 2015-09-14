@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <!-- presionado -->
+    <item android:state_pressed="true"
+          android:state_window_focused="true"
+          android:drawable="@drawable/seek_thumb_pressed" />
+     
+    <!-- con foco -->
+    <item android:state_focused="true"
+          android:state_window_focused="true"
+          android:drawable="@drawable/seek_thumb_selected" />
+     
+    <!-- seleccionado -->
+    <item android:state_selected="true"
+          android:state_window_focused="true"
+          android:drawable="@drawable/seek_thumb_selected" />
+ 
+    <!-- estado "normal" -->
+    <item android:drawable="@drawable/seek_thumb_normal" />
+ 
+</selector>

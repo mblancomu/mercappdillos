@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_screen_bg">#20324a</color>
+    <color name="rounded_container_bg">#80000000</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#00646663</color>
+    <color name="amarillojavi">#f6a800</color>
+    <color name="verdejavi">#00936c</color>
+    <color name="amarillojavipul">#ffe8b5</color>
+    <color name="verdejavipul">#c6dad0</color>
+    <color name="negrojavi">#111f24</color>
+    <color name="negrojavipul">#696969</color>
+    <color name="negrobuscar">#AAffffff</color>
+    <color name="verdejavigrado1">#00a77f</color>
+    <color name="verdejavigrado2">#6cbea8</color>
+    <color name="verdejavigrado3">#c6dad0</color>
+    <color name="amarillojavigrado1">#f3961c</color>
+    <color name="amarillojavigrado2">#fdd16c</color>
+    <color name="amarillojavigrado3">#faba00</color>
+    <color name="rojomapa">#eb1749</color>
+    <color name="rojomapapul">#F96B9A</color>
+    <color name="amarillotab">#f7a800</color>  
+    <color name="verdetab">#00936c</color>   
+    <color name="seekbar">#ababab</color>
+    <color name="seekbarfree">#4a4a4a</color> 
+    <color name="textolink">#AA00FFFF</color>
+    <color name="facebook">#425c97</color>
+    <color name="facebookpul">#83a4ee</color>
+    
+    <color name="moradomapapul">#DD73B6</color>
+    <color name="moradomapa">#C71585</color>
+    <color name="moradolistado">#D2449D</color>  
+    <color name="moradoradar">#CD2C91</color>
+    
+    <color name="azullistado">#1E90FF</color>  
+    <color name="azullistadopul">#00FFFF</color>
+    
+    
+    
+</resources>

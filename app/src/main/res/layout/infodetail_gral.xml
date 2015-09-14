@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/negrojavi"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_fondo_morado"
+            android:tabStripEnabled="true" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#CC000000" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/moradomapa"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/btnatras"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_barramenu"
+                    android:onClick="atras"
+                    android:src="@drawable/atras" />
+
+                <ImageButton
+                    android:id="@+id/btnhome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_barramenu"
+                    android:drawableRight="@drawable/home"
+                    android:onClick="home"
+                    android:src="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/btnmapa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_barramenu"
+                    android:drawableRight="@drawable/mapa"
+                    android:onClick="mapa"
+                    android:src="@drawable/mapasub" />
+
+                <ImageButton
+                    android:id="@+id/btnradar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_barramenu"
+                    android:drawableRight="@drawable/radar"
+                    android:onClick="radar"
+                    android:src="@drawable/radarsub" />
+
+                <ImageButton
+                    android:id="@+id/btncompartir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_barramenu"
+                    android:drawableRight="@drawable/compartir"
+                    android:onClick="compartir"
+                    android:src="@drawable/compartir" />
+            </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+
+</TabHost>

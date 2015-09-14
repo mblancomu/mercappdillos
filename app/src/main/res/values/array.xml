@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="municipios">
+<item>Ajalvir</item>
+<item>Alcalá de Henares</item>
+<item>Alcobendas</item>
+<item>Alcorcón</item>
+<item>Aldea del Fresno</item>
+<item>Algete</item>
+<item>Alpedrete</item>
+<item>Ambite</item>
+<item>Anchuelo</item>
+<item>Aranjuez</item>
+<item>Arganda del Rey</item>
+<item>Batres</item>
+<item>Becerril de la Sierra</item>
+<item>Belmonte de Tajo</item>
+<item>Brea de Tajo</item>
+<item>Brunete</item>
+<item>Buitrago del Lozoya</item>
+<item>Bustarviejo</item>
+<item>Cadalso de los Vidrios</item>
+<item>Camarma de Esteruelas</item>
+<item>Campo Real</item>
+<item>Carabaña</item>
+<item>Casarrubuelos</item>
+<item>Cenicientos</item>
+<item>Cerceda</item>
+<item>Cercedilla</item>
+<item>Chapinería</item>
+<item>Chinchón</item>
+<item>Ciempozuelos</item>
+<item>Cobeña</item>
+<item>Collado Mediano</item>
+<item>Collado Villalba</item>
+<item>Colmenar de Oreja</item>
+<item>Colmenar del Arroyo</item>
+<item>Colmenar Viejo</item>
+<item>Colmenarejo</item>
+<item>Coslada</item>
+<item>Cubas de la Sagra</item>
+<item>Daganzo de Arriba</item>
+<item>El Álamo</item>
+<item>El Berrueco</item>
+<item>El Boalo</item>
+<item>El Escorial</item>
+<item>El Molar</item>
+<item>El Vellón</item>
+<item>Estación de Zarzalejo</item>
+<item>Estremera</item>
+<item>Fresnedillas de la Oliva</item>
+<item>Fuenlabrada</item>
+<item>Fuente El Saz de Jarama</item>
+<item>Fuente el Saz del Jarama</item>
+<item>Fuentidueña de Tajo</item>
+<item>Galapagar</item>
+<item>Getafe</item>
+<item>Griñón</item>
+<item>Guadalix de la Sierra</item>
+<item>Guadarrama</item>
+<item>Hoyo de Manzanares</item>
+<item>Humanes de Madrid</item>
+<item>La Cabrera</item>
+<item>Las Rozas</item>
+<item>Leganés</item>
+<item>Loeches</item>
+<item>Los Molinos</item>
+<item>Los Santos de Humosa</item>
+<item>Lozoya</item>
+<item>Madrid</item>
+<item>Majadahonda</item>
+<item>Manzanares el Real</item>
+<item>Mataelpino</item>
+<item>Meco</item>
+<item>Mejorada del Campo</item>
+<item>Miraflores de la Sierra</item>
+<item>Moraleja de Enmedio</item>
+<item>Moralzarzal</item>
+<item>Morata de Tajuña</item>
+<item>Móstoles</item>
+<item>Navacerrada</item>
+<item>Navalafuente</item>
+<item>Navalagamella</item>
+<item>Navalcarnero</item>
+<item>Navas del Rey</item>
+<item>Nuevo Baztán</item>
+<item>Orusco de Tajuña</item>
+<item>Paracuellos de Jarama</item>
+<item>Parla</item>
+<item>Pedrezuela</item>
+<item>Pelayos de la Presa</item>
+<item>Perales de Tajuña</item>
+<item>Pezuela de las Torres</item>
+<item>Pinto</item>
+<item>Pozuelo de Alarcón</item>
+<item>Quijorna</item>
+<item>Rascafría</item>
+<item>Rivas-Vaciamadrid</item>
+<item>Robledo de Chavela</item>
+<item>Rozas de Puerto Real</item>
+<item>San Agustín de Guadalix</item>
+<item>San Fernando de Henares</item>
+<item>San Lorenzo del Escorial</item>
+<item>San Martín de la Vega</item>
+<item>San Martín de Valdeiglesias</item>
+<item>San Sebastián de los Reyes</item>
+<item>Serranillos del Valle</item>
+<item>Sevilla la Nueva</item>
+<item>Soto de la Moraleja</item>
+<item>Soto del Real</item>
+<item>Talamanca de Jarama</item>
+<item>Tielmes</item>
+<item>Titulcia</item>
+<item>Torrejón de Ardoz</item>
+<item>Torrejón de la Calzada</item>
+<item>Torrejón de Velasco</item>
+<item>Torrelaguna</item>
+<item>Torrelodones</item>
+<item>Torres de la Alameda</item>
+<item>Tres Cantos</item>
+<item>Valdaracete</item>
+<item>Valdelaguna</item>
+<item>Valdemanco</item>
+<item>Valdemaqueda</item>
+<item>Valdemorillo</item>
+<item>Valdemoro</item>
+<item>Valdeolmos-Alalpardo</item>
+<item>Valdetorres de Jarama</item>
+<item>Valdilecha</item>
+<item>Velilla de San Antonio</item>
+<item>Villa del Prado</item>
+<item>Villaconejos</item>
+<item>Villalbilla</item>
+<item>Villamanrique de Tajo</item>
+<item>Villamanta</item>
+<item>Villamantilla</item>
+<item>Villanueva de la Cañada</item>
+<item>Villanueva de Perales</item>
+<item>Villanueva del Pardillo</item>
+<item>Villar del Olmo</item>
+<item>Villarejo de Salvanés</item>
+<item>Villaviciosa de Odón</item>
+<item>Zarzalejo</item>
+<item>Todos</item>
+</string-array>
+
+<string-array name="tipo">
+<item>Mercadillo Generalista</item>
+<item>Mercado de Artesanía</item>
+<item>Mercadillo de Coleccionismo</item>
+<item>Rastro de Segunda Mano</item>
+<item>Mercadillo de Antigüedades</item>
+<item>Mercado Ecológico</item>
+<item>Otro Mercadillo o Feria</item>
+<item>Mercado de Navidad</item>
+<item>Todos</item>
+</string-array>
+
+<string-array name="fecha">
+<item>Lunes</item>
+<item>Martes</item>
+<item>Miércoles</item>
+<item>Jueves</item>
+<item>Viernes</item>
+<item>Sábado</item>
+<item>Domingo</item>
+<item>Todos</item>
+</string-array>    
+</resources>

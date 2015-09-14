@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Size de textos en la App. -->
+    <dimen name="textogral">13sp</dimen>
+    <dimen name="textotitulorec">10sp</dimen>
+    <dimen name="textotituloinfo">15sp</dimen>
+    <dimen name="textomenugral">16sp</dimen>
+    <dimen name="textotabmapa">7sp</dimen>
+    <dimen name="textotabrealidad">8sp</dimen>
+    <dimen name="textomenuinforec">15sp</dimen>
+     <dimen name="textobtnsettings">10sp</dimen>
+
+</resources>
