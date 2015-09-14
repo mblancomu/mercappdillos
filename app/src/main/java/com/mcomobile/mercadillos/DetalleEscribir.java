@@ -136,6 +136,8 @@ public class DetalleEscribir extends Activity {
 			// Note that create product url accepts POST method
 			JSONObject json = jsonParser.makeHttpRequest(url_crear_comentario,
 					"POST", params);
+
+			Log.e("","Por qué petas???");
 			
 			// check log cat fro response
 			Log.d("Create Response", json.toString());
