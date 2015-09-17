@@ -3,7 +3,12 @@ package com.mcomobile.mercadillos;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
@@ -130,7 +135,7 @@ public class DetalleEscribir extends Activity {
 			params.add(new BasicNameValuePair("comentario", comentario));
 			params.add(new BasicNameValuePair("municipio", municipio));
 			params.add(new BasicNameValuePair("tipo", tipo));
-			params.add(new BasicNameValuePair("id", "2"));
+			//params.add(new BasicNameValuePair("id", "2"));
 
 			Log.e("","Datos: " + mercado + " -- " + nota + " -- " + comentario + " -- " + municipio + " -- " + tipo);
 
@@ -163,6 +168,47 @@ public class DetalleEscribir extends Activity {
 		}
 
 	}
+
+	class SummaryAsyncTask extends AsyncTask<Void, Void, Boolean> {
+
+		private void postData() {
+
+			Log.e("","Entra aqui?????");
+
+			HttpClient httpclient = new DefaultHttpClient();
+			HttpPost httppost = new HttpPost(url_crear_comentario);
+
+			String nota = ratingValue;
+			mercado = inputName.getText().toString();
+			comentario = inputDesc.getText().toString();
+
+			try {
+
+				// Building Parameters
+				List<NameValuePair> params = new ArrayList<NameValuePair>();
+				params.add(new BasicNameValuePair("mercado", mercado));
+				params.add(new BasicNameValuePair("nota", nota));
+				params.add(new BasicNameValuePair("comentario", comentario));
+				params.add(new BasicNameValuePair("municipio", municipio));
+				params.add(new BasicNameValuePair("tipo", tipo));
+				httppost.setEntity(new UrlEncodedFormEntity(params));
+				HttpResponse response = httpclient.execute(httppost);
+
+				Log.e("","Que responde??: " + response.toString());
+			}
+			catch(Exception e)
+			{
+				Log.e("log_tag", "Error:  "+e.toString());
+			}
+		}
+
+		@Override
+		protected Boolean doInBackground(Void... params) {
+			postData();
+			return null;
+		}
+	}
+
 public void comprobarConexion(){
     	
     	objDetector = new Detector(getApplicationContext());       

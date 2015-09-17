@@ -42,7 +42,7 @@ public class MenuGral extends Activity{
 	final Context context = this;
 	boolean fallo = false;
 	
-	private static String url_all_recursos = "http://mcomobile.com/php_merca/mercadillos.php";
+	private static String url_all_recursos = "http://mcomobile.com/php_merca/mercadillos_php.php";
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_MERCADILLOS = "mercadillos";
     private static final String	TAG_NOMBREID = "nombre";
